@@ -11,8 +11,11 @@ namespace ShortLinkServicesMvc.Models
     public class Link
     {
         SqlProcess proces = new SqlProcess();
+        public int Id { get; set; }
         public string UzunLink { get; set; }
         public string KısaLink { get; set; }
+        public int TiklanmaSayac { get; set; }
+
 
         public void Ekle()
         {
@@ -22,19 +25,23 @@ namespace ShortLinkServicesMvc.Models
 
                 );
         }
-        public string UzunLinkGetir()
+        public Link UzunLinkGetir()
         {
            
             DataTable dt = proces.SetExecuteReader("Select * from [UserLink] where KisaLink=@kisalink",
                 new SqlParameter("@kisalink", KısaLink)
                 );
-            if (dt.Rows.Count > 0) //Burada dt icindeki rowun 1 den buyuk olması gerekıyor ki if şartı sağlansın.
+            Link link = new Link();
+            if (dt.Rows.Count > 0) 
             {
-                return dt.Rows[0]["UzunLink"].ToString();
+                link.UzunLink=dt.Rows[0]["UzunLink"].ToString();
+                link.Id = Convert.ToInt32(dt.Rows[0]["Id"]);
+                link.TiklanmaSayac = Convert.ToInt32(dt.Rows[0]["TiklanmaSayac"]);
+                return link;
             }
             else
             {
-                return "";
+                return new Link();
             }
 
         }
@@ -55,5 +62,22 @@ namespace ShortLinkServicesMvc.Models
             return linkler;
         }
 
+        public void SayacArttir()
+        {
+            proces.SetExecuteNonQuery("Update [UserLink] set TiklanmaSayac+=1 where Id=@id",
+                new SqlParameter("@id", Id)
+                );
+            
+
+        }
+        public void HakArttir()
+        {
+            proces.SetExecuteNonQuery("Update [UserLink] set TiklanmaSayac-=5 where Id=@id",
+                new SqlParameter("@id", Id)
+                );
+
+           
+                
+        }
     }
 }

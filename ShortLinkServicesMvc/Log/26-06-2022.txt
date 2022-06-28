@@ -1,0 +1,30 @@
+<------------->
+<------------->
+26.06.2022 14:23:50 Değer null olamaz.
+Parametre adı: url    konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 27     konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 27
+<------------->
+<------------->
+<------------->
+<------------->
+26.06.2022 17:59:12 Değer null olamaz.
+Parametre adı: url    konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 29     konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 29
+<------------->
+<------------->
+<------------->
+<------------->
+26.06.2022 17:59:38 Değer null olamaz.
+Parametre adı: url    konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 29     konum: System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   konum: System.Web.HttpResponseWrapper.Redirect(String url)
+   konum: ShortLinkServicesMvc.Controllers.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Controllers\DController.cs içinde: satır 29
+<------------->
+<------------->

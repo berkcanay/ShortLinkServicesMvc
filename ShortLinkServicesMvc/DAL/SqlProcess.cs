@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShortLinkServicesMvc.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -11,12 +12,12 @@ namespace ShortLinkServicesMvc.DAL
     {
         SqlConnection _conn;
         SqlCommand _cmd;
-        readonly SqlConn _connectionString=new SqlConn();
+        readonly SqlConn _connectionString = new SqlConn();
 
         private SqlConnection SqlConnect()
         {
             _conn = new SqlConnection(_connectionString.ConnectionString);
-            if (_conn.State!=ConnectionState.Open)
+            if (_conn.State != ConnectionState.Open)
             {
                 _conn.Open();
             }
@@ -24,7 +25,7 @@ namespace ShortLinkServicesMvc.DAL
         }
         private void SqlClosed()
         {
-            if (_conn.State==ConnectionState.Open)
+            if (_conn.State == ConnectionState.Open)
             {
                 _conn.Close();
             }
@@ -46,7 +47,7 @@ namespace ShortLinkServicesMvc.DAL
                 return false;
             }
         }
-        public bool SetExecuteNonQuery(string cmdText,params SqlParameter[] sqlParameters)
+        public bool SetExecuteNonQuery(string cmdText, params SqlParameter[] sqlParameters)
         {
             try
             {
@@ -73,15 +74,16 @@ namespace ShortLinkServicesMvc.DAL
             SqlClosed();
             return dt;
         }
-        public DataTable SetExecuteReader(string cmdText,params SqlParameter[] sqlParameters)
+        public DataTable SetExecuteReader(string cmdText, params SqlParameter[] sqlParameters)
         {
-            _cmd = new SqlCommand(cmdText,this.SqlConnect());
-            DataTable dt =new DataTable();
+            _cmd = new SqlCommand(cmdText, this.SqlConnect());
+            DataTable dt = new DataTable();
             _cmd.Parameters.AddRange(sqlParameters);
             dt.Load(_cmd.ExecuteReader());
             _cmd.Dispose();
             SqlClosed();
             return dt;
         }
+
     }
 }

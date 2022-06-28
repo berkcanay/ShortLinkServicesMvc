@@ -3,8 +3,13 @@
 @{
     ViewBag.Title = "Home Page";
 }
-
-<div class="row" style="margin-top:200px;margin-bottom:200px">
+<div class="col-md-12" style="justify-content:center;">
+    <div style="margin-top:50px; margin-bottom:50px; margin-left:500px;">
+        <button class="btn btn-primary" id="btn">Arttır</button>
+        <label id="txt"></label>
+    </div>
+</div>
+<div class="row">
     <div class="col-md-11">
         <div class="form-group">
             <label>Lütfen linkinizi giriniz:</label>
@@ -34,7 +39,7 @@
                 {
                     <tr>
                         <td>@_link.UzunLink</td>
-                        <td>@_link.KısaLink</td>
+                        <td>https://localhost:44342/D/In?I=@_link.KısaLink</td>
                     </tr>
                 }
             </tbody>
@@ -43,8 +48,10 @@
 </div>
 
 
+
 @section Scripts{
     <script type="text/javascript">
+
         function Kisalt() {
             /* alert($("#txtLink").val()); //görmek için*/
             var test = $("#txtLink").val();
@@ -60,28 +67,30 @@
                 success: function (result) {
                     console.log(result); // inspect te sonuç bildirisini görmek içindir.
                     $("#KisaLinkSonuc").html("https://localhost:44342/D/In?I=" + result);
-
                 },
                 error: function (result) {
                     alert(response.d);
                 }
             });
-            //$.ajax({
-            //    type: "GET", //POST
-            //    url: "/Home/LinkKisalt",
-            //    data: "{uzunLink:'" + uzunLink + "'}",
-            //    contentType: "application/json; charset=utf-8",
-            //    dataType: "json",
-            //    success: function (result) {
-            //        console.log(result); // inspect te sonuç bildirisini görmek içindir.
-            //        $("#KisaLinkSonuc").html(result);
-
-            //    },
-            //    error: function (result) {
-            //        alert(response.d);
-            //    }
-            //});
+            
         }
+        function Eksilt() {
+            $.ajax({
+                type: "POST", //POST
+                url: "/D/Art",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (response) {
+                    console.log(response); // inspect te sonuç bildirisini görmek içindir.
+
+                },
+                error: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+
+
     </script>
 
 }
