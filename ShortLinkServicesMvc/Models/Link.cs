@@ -72,12 +72,7 @@ namespace ShortLinkServicesMvc.Models
         }
         public void HakArttir()
         {
-            proces.SetExecuteNonQuery("Update [UserLink] set TiklanmaSayac-=5 where Id=@id",
-                new SqlParameter("@id", Id)
-                );
-
-           
-                
+            proces.SetExecuteNonQuery("Update [UserLink] set TiklanmaSayac-=5");
         }
     }
 }

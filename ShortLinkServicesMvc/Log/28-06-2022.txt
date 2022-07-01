@@ -1,0 +1,48 @@
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--
+28.06.2022 17:58:40The parameterized query '(@kisalink nvarchar(4000))Select * from [UserLink] where KisaLin' expects the parameter '@kisalink', which was not supplied.    konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   konum: System.Data.SqlClient.SqlDataReader.get_MetaData()
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader()
+   konum: ShortLinkServicesMvc.DAL.SqlProcess.SetExecuteReader(String cmdText, SqlParameter[] sqlParameters) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\DAL\SqlProcess.cs içinde: satır 82
+   konum: ShortLinkServicesMvc.Models.Link.UzunLinkGetir() C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\Link.cs içinde: satır 31
+   konum: ShortLinkServicesMvc.Models.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\DController.cs içinde: satır 19
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--
+28.06.2022 18:01:28The parameterized query '(@kisalink nvarchar(4000))Select * from [UserLink] where KisaLin' expects the parameter '@kisalink', which was not supplied.    konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   konum: System.Data.SqlClient.SqlDataReader.get_MetaData()
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader()
+   konum: ShortLinkServicesMvc.DAL.SqlProcess.SetExecuteReader(String cmdText, SqlParameter[] sqlParameters) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\DAL\SqlProcess.cs içinde: satır 82
+   konum: ShortLinkServicesMvc.Models.Link.UzunLinkGetir() C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\Link.cs içinde: satır 31
+   konum: ShortLinkServicesMvc.Models.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\DController.cs içinde: satır 19
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--
+28.06.2022 18:01:31The parameterized query '(@kisalink nvarchar(4000))Select * from [UserLink] where KisaLin' expects the parameter '@kisalink', which was not supplied.    konum: System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   konum: System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   konum: System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   konum: System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   konum: System.Data.SqlClient.SqlDataReader.get_MetaData()
+   konum: System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   konum: System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   konum: System.Data.SqlClient.SqlCommand.ExecuteReader()
+   konum: ShortLinkServicesMvc.DAL.SqlProcess.SetExecuteReader(String cmdText, SqlParameter[] sqlParameters) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\DAL\SqlProcess.cs içinde: satır 82
+   konum: ShortLinkServicesMvc.Models.Link.UzunLinkGetir() C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\Link.cs içinde: satır 31
+   konum: ShortLinkServicesMvc.Models.DController.In(String I) C:\Users\Berkcan Ay\Desktop\SL\ShortLinkServicesMvc\ShortLinkServicesMvc\Models\DController.cs içinde: satır 19
+--cof--cof--cof--cof--cof----cof--cof--cof--cof--cof--

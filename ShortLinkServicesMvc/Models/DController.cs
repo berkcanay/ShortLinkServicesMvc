@@ -49,7 +49,6 @@ namespace ShortLinkServicesMvc.Models
         {
             Link link = new Link();
             link.HakArttir();
-
             return Json("Başarılı");
         }
 
